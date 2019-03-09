@@ -1,1 +1,1 @@
-add_lunch_combo lineage_tulip-userdebug
+add_lunch_combo rr_tulip-userdebug

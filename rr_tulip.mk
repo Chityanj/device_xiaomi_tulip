@@ -24,10 +24,10 @@ $(call inherit-product-if-exists, vendor/xiaomi/MiuiCamera/tulip.mk)
 $(call inherit-product, device/xiaomi/tulip/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 2140
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 2160
 
-PRODUCT_NAME := lineage_tulip
+PRODUCT_NAME := rr_tulip
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := tulip
 PRODUCT_MANUFACTURER := Xiaomi
@@ -44,3 +44,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := xiaomi/tulip/tulip:8.1.0/OPM1.171019.011/V10.0.5.0.OEKMIFH:user/release-keys
 
 TARGET_VENDOR := Xiaomi
+export RR_BUILDTYPE := Official
